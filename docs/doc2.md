@@ -2,9 +2,9 @@
 id: doc2
 title: Document Number 2
 ---
-# This is a test
+# Submit Documentation 
 
-of testing tests
+this is just a test repo 
 
 ## Step 1 
 type your documentation in the `/docs` folder and save
