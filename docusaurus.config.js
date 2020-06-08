@@ -1,10 +1,10 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://youthful-goldstine-6786c2.netlify.app/',
+  url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'MathesonStep', // Usually your GitHub org/user name.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -32,6 +32,19 @@ module.exports = {
       style: 'dark',
       links: [
         {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Style Guide',
+              to: 'docs/',
+            },
+            {
+              label: 'Second Doc',
+              to: 'docs/doc2/',
+            },
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {
@@ -53,7 +66,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog/',
+              to: 'blog',
             },
             {
               label: 'GitHub',
@@ -67,12 +80,13 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-bootstrap',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
@@ -81,6 +95,9 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
