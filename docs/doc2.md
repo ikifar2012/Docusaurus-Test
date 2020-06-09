@@ -1,8 +1,7 @@
 ---
 id: doc2
-title: Document Number 2
+title: Submit Documentation 
 ---
-# Submit Documentation 
 
 this is just a test repo 
 
